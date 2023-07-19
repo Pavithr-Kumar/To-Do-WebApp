@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 100vh;
+    background: linear-gradient(160deg,rgb(105, 243, 151),rgb(125, 176, 117),rgb(85, 7, 219));
+}
+.main{
+    margin-block: 100px;
+    width: 600px;
+    min-width: 450px;
+    margin-inline: auto;
+    padding: 20px;
+    background-color: rgb(251, 253, 255);
+    border-radius: 4px;
+    
+}
+.head{
+    padding:30px  ;
+}
+.head>h1{
+    margin-bottom: 15px;
+    color: rgb(60, 55, 46);
+}
+.head>input{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 7px  10px ;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgb(219, 225, 223);
+
+}
+.head>button{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 7px 20px;
+    font-size: 18px;
+    background: linear-gradient(24deg,rgb(186, 192, 37),rgb(28, 193, 193));
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.1s ease;
+    margin-left: 10px;
+}
+.head>button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 3px gray;
+}
+.head>button:active{
+    transform: scale(1.05);
+}
+.content{
+    padding: 10px 30px;
+}
+.content>ul{
+    list-style-type: none;
+   
+}
+.content>ul>li{
+    margin-bottom: 15px;
+    user-select: none;
+    padding-left: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+}
+
+ul li::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-image: url(Assets/images/unchecked.png);
+    background-size: cover;
+    position: absolute;
+    top: 6px ;
+    left: 0px;
+
+}
+ul li.checked{
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before{
+    background-image: url(Assets/images/checked.png);
+    
+}
+
+ul li span{
+    font-size: 25px;
+}
+ul li span:hover{
+   text-shadow: 3px 3px 12px rgb(95, 99, 103);
+   cursor: pointer;
+   
+}
+
+
